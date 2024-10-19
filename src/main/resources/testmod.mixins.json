@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.error1015.testmod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "testmod.refmap.json",
+  "mixins": [
+    "PlayerMixin",
+    "SwordMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
