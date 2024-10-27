@@ -1,5 +1,6 @@
 package org.error1015.testmod.item.curios;
 
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -19,8 +20,13 @@ public class TestCurio extends ItemWithTooltip implements ICurioItem {
     @Override
     public void curioTick(SlotContext slotContext, ItemStack stack) {
         Player player = (Player) slotContext.entity();
-        if (player.hasEffect(MobEffects.WITHER)) {
-            player.removeEffect(MobEffects.WITHER);
-        }
+        MobEffect effect = MobEffects.WITHER;
+        if (player.hasEffect(effect)) player.removeEffect(effect);
+    }
+
+    @Override
+    public boolean canUnequip(SlotContext slotContext, ItemStack stack) {
+        Player player = (Player) slotContext.entity();
+        return !player.isCreative();
     }
 }

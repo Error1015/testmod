@@ -12,7 +12,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class PlayerMixin {
     @Inject(at = @At("HEAD"), method = "getHurtSound", cancellable = true)
     public void playerHurtSound(CallbackInfoReturnable<SoundEvent> cir) {
-        cir.setReturnValue(SoundEvents.PLAYER_LEVELUP);
+        cir.setReturnValue(SoundEvents.ANVIL_USE);
+        cir.cancel();
+    }
+
+    @Inject(at = @At("HEAD"), method = "getDeathSound", cancellable = true)
+    public void playerDiedSound(CallbackInfoReturnable<SoundEvent> cir) {
+        cir.setReturnValue(SoundEvents.ANVIL_LAND);
         cir.cancel();
     }
 }

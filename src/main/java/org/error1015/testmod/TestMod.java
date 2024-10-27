@@ -12,7 +12,6 @@ import static org.error1015.testmod.item.ItemRegistry.ITEMS;
 
 @Mod(TestMod.MODID)
 public class TestMod {
-
     public static final String MODID = "testmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 

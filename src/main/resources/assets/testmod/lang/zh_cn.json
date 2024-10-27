@@ -1,4 +1,9 @@
 {
+  "createivetab.testmod": "TestMod",
   "item.testmod.test_curio": "奇异的饰品",
-  "item.testmod.test_curio.desc": "不再凋灵"
+  "item.testmod.test_curio.desc": "不再凋灵",
+  "item.testmod.magic_mirror": "§6魔镜",
+  "item.testmod.magic_mirror.desc": "§a传送至重生点",
+  "message.testmod.magic_mirror_succeed": "§a回家力OwO",
+  "message.testmod.magic_mirror_failed": "§4看起来回不去了QWQ"
 }

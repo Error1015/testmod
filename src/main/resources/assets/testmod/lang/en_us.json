@@ -1,4 +1,9 @@
 {
+  "createivetab.testmod": "TestMod",
   "item.testmod.test_curio": "strange curio",
-  "item.testmod.test_curio.desc": "never wither"
+  "item.testmod.test_curio.desc": "never wither",
+  "item.testmod.magic_mirror": "§6Magic Mirror",
+  "item.testmod.magic_mirror.desc": "§ateleportTo your bed",
+  "message.testmod.magic_mirror_succeed": "§aWelcome Home OwO",
+  "message.testmod.magic_mirror_failed": "§4Oh No!QWQ"
 }
